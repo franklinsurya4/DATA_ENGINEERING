@@ -508,52 +508,6 @@
       "layout": [
         {
           "widget": {
-            "name": "total-orders",
-            "queries": [
-              {
-                "name": "main_query",
-                "query": {
-                  "datasetName": "c1a3bb26",
-                  "fields": [
-                    {
-                      "name": "sum(total_orders)",
-                      "expression": "SUM(`total_orders`)"
-                    }
-                  ],
-                  "disaggregated": false
-                }
-              }
-            ],
-            "spec": {
-              "frame": {
-                "showTitle": true,
-                "showDescription": false,
-                "title": {
-                  "value": "<span style=\"text-align:justify;display:block\"><span style=\"font-weight: 700;\">Total Orders</span></span>",
-                  "fields": []
-                }
-              },
-              "version": 2,
-              "widgetType": "counter",
-              "encodings": {
-                "value": {
-                  "fieldName": "sum(total_orders)"
-                }
-              },
-              "data": {
-                "queryName": "main_query"
-              }
-            }
-          },
-          "position": {
-            "x": 0,
-            "y": 0,
-            "width": 4,
-            "height": 4
-          }
-        },
-        {
-          "widget": {
             "name": "total-revenue",
             "queries": [
               {
@@ -573,6 +527,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "Total Revenue",
                   "fields": []
@@ -592,7 +547,7 @@
           },
           "position": {
             "x": 4,
-            "y": 0,
+            "y": 4,
             "width": 4,
             "height": 4
           }
@@ -618,6 +573,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "Total Customers",
                   "fields": []
@@ -636,7 +592,7 @@
             }
           },
           "position": {
-            "x": 8,
+            "x": 4,
             "y": 0,
             "width": 4,
             "height": 4
@@ -663,6 +619,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "Average Order Value",
                   "fields": []
@@ -716,6 +673,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "Cancelled vs Non-Cancelled Orders By Month (Counter Graph)",
                   "fields": []
@@ -805,7 +763,7 @@
             }
           },
           "position": {
-            "x": 4,
+            "x": 8,
             "y": 4,
             "width": 4,
             "height": 4
@@ -832,6 +790,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "Total Shipments",
                   "fields": []
@@ -851,7 +810,7 @@
           },
           "position": {
             "x": 8,
-            "y": 4,
+            "y": 0,
             "width": 4,
             "height": 4
           }
@@ -881,6 +840,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "Daily Sales Trend (Bar Graph)",
                   "fields": []
@@ -939,6 +899,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "Sum Of Paymnet Count (Pie Chart)",
                   "fields": []
@@ -1039,6 +1000,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "Payment Attempts By Status (Pivot)",
                   "fields": []
@@ -1212,6 +1174,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "Ds Executive Summary (Table)",
                   "fields": []
@@ -1338,6 +1301,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "\tDaily Sales Area Trend",
                   "fields": []
@@ -1428,6 +1392,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "E-Commerce Pipeline Execution Timeline (Gantt chart)",
                   "fields": []
@@ -1530,6 +1495,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "Revenue By State (Choroplath Map)",
                   "fields": []
@@ -1616,6 +1582,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "Shipment Flow: Chennai to Destination States (Path Map)",
                   "fields": []
@@ -1678,6 +1645,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "\tOrder Value Distribution (Histogram)",
                   "fields": []
@@ -1751,6 +1719,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "\tProduct Sales vs Revenue (Scatter Plot)",
                   "fields": []
@@ -1826,6 +1795,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "Gross-to-Net Revenue Reconciliation (Waterfall chart)",
                   "fields": []
@@ -1888,6 +1858,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "Order Processing Flow (Sankey chart)",
                   "fields": []
@@ -1949,6 +1920,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "Monthly Weekday Sales Heatmap (Heat map)",
                   "fields": []
@@ -2013,6 +1985,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "Order Conversion (Funnel)",
                   "fields": []
@@ -2088,6 +2061,7 @@
             "spec": {
               "frame": {
                 "showTitle": true,
+                "headerAlignment": "center",
                 "title": {
                   "value": "Daily Revenue vs Order Count (Combo chart)",
                   "fields": []
@@ -2143,6 +2117,52 @@
             "y": 85,
             "width": 12,
             "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "total-orders",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "69766b02",
+                  "fields": [
+                    {
+                      "name": "sum(total_orders)",
+                      "expression": "SUM(`total_orders`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "frame": {
+                "showTitle": true,
+                "headerAlignment": "center",
+                "title": {
+                  "value": "Total Orders",
+                  "fields": []
+                }
+              },
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(total_orders)"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "height": 4
           }
         }
       ],
